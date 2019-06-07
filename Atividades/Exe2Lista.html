@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<h1 class = "jumbotron">IMC</h1>
+<div class="container">
+    <form name="dados">
+        <div id="grupo1" class="form-group" style="width:150px">
+            <label for="valor1" id="lbv1">Peso</label>
+            <input class = "form-control" type = "text" name="valor1" id="valor1">
+        </div>
+
+        <div id="alerta1" style ="display: none" class ="alert alert-danger">
+            <span>Preencha o valor 1 corretamente</span>
+        </div>
+
+        <div id="alerta2" style ="display: none" class ="alert alert-danger">
+            <span>Preencha o valor 2 corretamente</span>
+        </div>
+
+        <div id="grupo2" class="form-group" style="width:150px">
+            <label for="valor2" id="lbv2">Altura</label>
+            <input class = "form-control" type = "text" name="valor2" id="valor2">
+        </div>
+
+
+        <div id="grupo4" class="form" style="width:150px">
+            <label for="imprime2">IMC</label>
+            <input class = "form" type = "text" name="IMC" id="imprime2" readonly="true">
+            <label for="imprime3">Classificação</label>
+            <input class = "form" type = "text" name="classi" id="imprime3" readonly="true">
+        </div>
+        <div id="grupo6" class="form-group" style="width:150px">
+            <label for="peso1">Peso ideal minimo</label>
+            <input class = "form" type = "text" name="peso1" id="peso1" readonly="true">
+            <label for="peso2">Peso ideal maximo</label>
+            <input class = "form" type = "text" name="peso2" id="peso2" readonly="true">
+        </div>
+
+
+
+        <button type="button" class = "btn-primary" name="calcular" id="calcular">Calcular</button>
+
+    </form>
+
+    <script
+            src="jquery-3.3.1.js"></script>
+
+    <script
+            src="Exe2lista.js"></script>
+</div>
+</body>
+</html>

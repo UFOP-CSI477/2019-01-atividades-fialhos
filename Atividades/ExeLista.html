@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<h1 class = "jumbotron">Competição</h1>
+
+<div class="container">
+    <form name="dados">
+        <div id="grupo1" class="form-group">
+            <label for="valor1" id="lbv1">Competidor</label>
+            <input class = "form" type = "text" name="valor1" id="valor1" style="width:250px">
+            <label for="valor2" id="lbv2">Tempo</label>
+            <input class = "form" type = "text" name="valor2" id="valor2" style="width:250px">
+        </div>
+
+        <div id="alerta1" style ="display: none" class ="alert alert-danger">
+            <span>Preencha o valor 1 corretamente</span>
+        </div>
+
+        <table id ="tabela1" border = "2" >
+
+            <thead class="thead-dark" id ="Thead">
+
+
+            <tbody id="corpotab" name="corpotab">
+
+            </tbody>
+        </table>
+
+        <br>
+
+        <button type="button" class = "btn-primary" name="salva" id="salva">Inserir</button>
+        <button type="button" class = "btn-primary" name="ordenar" id="ordenar">Ordenar</button>
+        <a href="ExeLista.html">limpar</a>
+    </form>
+
+    <br>
+
+    <table id ="tabela2" border = "2" >
+
+        <thead class="thead-dark" id="Theadord">
+
+        <tbody id="corpotabord" name="corpotabord">
+
+        </tbody>
+    </table>
+
+
+    <script
+            src="jquery-3.3.1.js"></script>
+
+    <script
+            src="Exe1lista.js"></script>
+
+</div>
+
+
+
+</body>
+</html>
